@@ -1,15 +1,22 @@
-### Coding for kids - Level 7 ASP.NET Core MVC intro
-
-##### Installation Notes VS2022:
-- VS 2019 requires a special developer account to download now.
-- The Selections options are different than in VS 2019 for installing xamarin, it must be selected under indivudual components after selecting cross platform .NET. Furthermore, xamarin does not seem to work even though the option to add xnarin pages is there. It seemns it must be downloaded as a seperate nuget package. The one in the installer may only work with .NET core v2 or not at all.
-- .NET Core 3 is not available for download in VS 2022 Community only version 2 which is no longer supported all. it even warns you of in the installer, with no option to download the latest version.
-- It still lets you choose to create a .NET Core MVC project but there are no .NET Core SDK’s to select under the last page SDK selection.
-- If you attempt to create the solution it errors out completely silently and you end up with a solution with 0 projects but the project files are still created.
-- If you attempt to add the project to the solution it complains it can\'t find the SDK..
-- I installed .net core v3 here: https://dotnet.microsoft.com/en-us/download/dotnet/3.1
-- Finally removing/reordering the x86 version of from my path variable and then recreating the entire solution (trying to add the project file gave the same generic error as before) fixed it and it added the project to the solution automatically. (dotnet.exe x86/x64 installed by VS installer but x86 was first in PATH, I believe this caused the error.)
- 
-Then, the solution creator allowed me to select the .net core sdk but I still ended up with an empty solution and the same error upon trying to add the project to the solution.
- 
-I think VS uses dotnet.exe --list-sdks I think before adding a project to a solution but must use something else on the solution creation screen where it detects all SDKs fine. This is a guess based on the eventual error upon manual add and solution. Why .net core 3 isn\'t available in the latest vs community installer let alone the erroring out with no message whatsoever until you manually attempt to add the project is beyond me. However, I thought I would create these up to date installation notes for windows in case you're interested. It's probably easier to use v2 in the VS installer (untested) but it’s also depreciated.
+<h3 class="code-line" data-line-start=0 data-line-end=1 ><a id="Coding_for_kids__Level_7_ASPNET_Core_MVC_intro__For_JP_Ciriculum_Director_0"></a>Coding for kids - Level 7 <a href="http://ASP.NET">ASP.NET</a> Core MVC intro - For JP (Ciriculum Director)</h3>
+<h5 class="code-line" data-line-start=2 data-line-end=3 ><a id="Installation_Notes_VS2022_2"></a>Installation Notes VS2022:</h5>
+<ul>
+<li class="has-line-data" data-line-start="3" data-line-end="4">VS 2019 requires a special developer account to download now.</li>
+<li class="has-line-data" data-line-start="4" data-line-end="5">The Selections options are different than in VS 2019 for installing xamarin, it must be selected under indivudual components after selecting cross platform .NET. Furthermore, xamarin does not seem to work even though the option to add xnarin pages is there. It seemns it must be downloaded as a seperate nuget package. The one in the installer may only work with .NET core v2 or not at all.</li>
+<li class="has-line-data" data-line-start="5" data-line-end="6">.NET Core 3 is not available for download in VS 2022 Community only version 2 which is no longer supported all. it even warns you of in the installer, with no option to download the latest version.</li>
+<li class="has-line-data" data-line-start="6" data-line-end="7">It still lets you choose to create a .NET Core MVC project but there are no .NET Core SDK’s to select under the last page SDK selection.</li>
+<li class="has-line-data" data-line-start="7" data-line-end="8">If you attempt to create the solution it errors out completely silently and you end up with a solution with 0 projects but the project files are still created.</li>
+<li class="has-line-data" data-line-start="8" data-line-end="9">If you attempt to add the project to the solution it complains it can’t find the SDK…</li>
+<li class="has-line-data" data-line-start="9" data-line-end="10">I installed .net core v3 here: <a href="https://dotnet.microsoft.com/en-us/download/dotnet/3.1">https://dotnet.microsoft.com/en-us/download/dotnet/3.1</a></li>
+<li class="has-line-data" data-line-start="10" data-line-end="12">Finally removing/reordering the x86 version of from my path variable and then recreating the entire solution (trying to add the project file gave the same generic error as before) fixed it and it added the project to the solution automatically. (dotnet.exe x86/x64 installed by VS installer but x86 was first in PATH, I believe this caused the error.)</li>
+</ul>
+<p class="has-line-data" data-line-start="12" data-line-end="13">Then, the solution creator allowed me to select the .net core sdk but I still ended up with an empty solution and the same error upon trying to add the project to the solution.</p>
+<p class="has-line-data" data-line-start="14" data-line-end="15">I think VS uses dotnet.exe --list-sdks I think before adding a project to a solution but must use something else on the solution creation screen where it detects all SDKs fine. This is a guess based on the eventual error upon manual add and solution. Why .net core 3 isn’t available in the latest vs community installer let alone the erroring out with no message whatsoever until you manually attempt to add the project is beyond me. However, I thought I would create these up to date installation notes for windows in case you’re interested. It’s probably easier to use v2 in the VS installer (untested) but it’s also depreciated.</p>
+<h4 class="code-line" data-line-start=16 data-line-end=17 ><a id="Coding_Notes_16"></a>Coding Notes:</h4>
+<ul>
+<li class="has-line-data" data-line-start="17" data-line-end="18">Added functionality to the contact page to list entered usernames and clear them</li>
+<li class="has-line-data" data-line-start="18" data-line-end="19">This works by simply passing the current list back to the controllor and is not very efficent for large lists.</li>
+<li class="has-line-data" data-line-start="19" data-line-end="21">Meant to be a simple example of how it is important to keep things stateless to scale. A better way would be SQL, Redis or the browser cache, but this was built trying to not use any backend.</li>
+</ul>
+<p class="has-line-data" data-line-start="21" data-line-end="22"><strong>Please see Views/Contacts/Index and Controllers/ContactController for the implementatiion, also see style.css for some small modifications and explanations.</strong></p>
+<p class="has-line-data" data-line-start="23" data-line-end="24">Link to this markdown file code: <a href="https://raw.githubusercontent.com/JordanBoulan/CFK-Intro-to-full-stack/master/README.md">https://raw.githubusercontent.com/JordanBoulan/CFK-Intro-to-full-stack/master/README.md</a></p>
