@@ -1,0 +1,9 @@
+﻿/* Instead of making a global class this changes only nav html elements that have class bg-color, so if I had a div with the bg-color class it would be a different color*/
+
+nav.bg-color {
+    background-color: #b24040
+}
+
+div.bg-color {
+    background-color: #ffffff
+}
