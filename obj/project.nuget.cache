@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QOJrFspCi7v/BnRRnfwvW92GQdywbg3VyVpsZoy9ZNWc3ruCF4jIBycYcaoSO8x99II0bKbiiVh1vDPgwQSWTg==",
+  "dgSpecHash": "AmMEby79lTgqyz5ZcVB+thpZihKyMeahzOZuggI7IvP/qSQeO90XDIpEdpXXJLOMBzVpf/l5UufIY92rk2Zclw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jade\\Documents\\Visual Studio Projects\\HelloCWK\\HelloCWK.csproj",
+  "projectFilePath": "C:\\Users\\jade\\Documents\\Visual Studio Projects\\HelloCWK\\HelloCFK.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jade\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\jade\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",

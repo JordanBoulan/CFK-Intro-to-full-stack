@@ -1,4 +1,4 @@
-﻿/* Instead of making a global class this changes only nav html elements that have class bg-color, so if I had a div with the bg-color class it would be a different color*/
+﻿/* Instead of mak+ing a global class this changes only nav html elements that have class bg-color, so if I had a div with the bg-color class it would be a different color*/
 
 nav.bg-color {
     background-color: #b24040
@@ -6,4 +6,46 @@ nav.bg-color {
 
 div.bg-color {
     background-color: #ffffff
+}
+
+
+/* Contact us styling */
+.wrapper {
+    width: 40%;
+    padding: 10px;
+    border-radius: 5px;
+    background: #2da8ff45;
+}
+
+form {
+    margin: 30px auto;
+}
+
+.btn {
+    width: 30%;
+    border: none;
+    margin-top: 5px;
+    color: white;
+    background-color: #3b5998;
+    border-radius: 5px;
+    padding: 12px;
+}
+
+.form-control {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.pcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error {
+    color: red;
+}
+
+.valid {
+    color: green;
 }

@@ -6265,9 +6265,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jade\\Documents\\Visual Studio Projects\\HelloCWK\\HelloCWK.csproj",
-      "projectName": "HelloCWK",
-      "projectPath": "C:\\Users\\jade\\Documents\\Visual Studio Projects\\HelloCWK\\HelloCWK.csproj",
+      "projectUniqueName": "C:\\Users\\jade\\Documents\\Visual Studio Projects\\HelloCWK\\HelloCFK.csproj",
+      "projectName": "HelloCFK",
+      "projectPath": "C:\\Users\\jade\\Documents\\Visual Studio Projects\\HelloCWK\\HelloCFK.csproj",
       "packagesPath": "C:\\Users\\jade\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\jade\\Documents\\Visual Studio Projects\\HelloCWK\\obj\\",
       "projectStyle": "PackageReference",

@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewData["Title"] = "Contact Us";
+}
+
+<h1>Contact Us</h1>
+
+<div class="wrapper">
+    <h3>Fill and submit the form below: </h3>
+    <form id="form" asp-controller="Contact" asp-action="Add" method="post" onsubmit="return validation()">
+        <p>
+            <input class="form-control" type="text" name="username" id="username" placeholder="Enter
+your username" onkeydown="validation()">
+            <span id="error_username"> </span>
+        </p>
+        <p>
+            <input class="form-control" type="password" name="password" id="password"
+                   placeholder="Enter your password" required>
+            <span id="error_password"> </span>
+        </p>
+        @foreach (String username in Model.usernameList){
+            int i = 0;
+            String user = "user" + i;
+            <input type="hidden" name=@user value="@username">
+        }
+           
+        <p class="pcenter"> <input type="submit" class="btn" style="margin-right:5%;"> <a class="btn" href="/Contact">Clear</a></p>
+    </form>
+</div>
+<br />
+<br />
+<div class="wrapper">
+    <h2>Username's Entered:</h2>
+    <ul>
+        @if (Model.usernameList == null || Model.usernameList.Count == 0) {
+            <li>None</li>
+        }
+        else {
+            @foreach (String username in Model.usernameList)
+            {
+                <li class="list-group-item list-group-item-primary">@username</li>
+            }
+        }
+    </ul>
+          
+              
+        
+      
+       
+</div>
